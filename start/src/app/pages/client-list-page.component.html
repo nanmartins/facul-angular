@@ -1,0 +1,23 @@
+<p>Essa é a primeira pagina de clientes</p>
+
+<ul *ngFor="let cliente of clientes">
+  <li>{{cliente.nome}} - {{cliente.id}}</li>
+</ul>
+
+<label>Nome:</label>
+<br>
+<input [(ngModel)]="nome">
+<br>
+<button (click)="adicionar()">Adicionar</button>
+
+<hr>
+
+<div *ngIf="clientePremium">
+  <p>Acesso liberado!</p>
+</div>
+
+<div *ngIf="!clientePremium">
+  Assine o premium para full acesso.
+</div>
+
+<button *ngIf="!clientePremium" (click)="clientePremium = true">Assinar</button>
