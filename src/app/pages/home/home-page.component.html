@@ -1,0 +1,26 @@
+
+<h1>Home</h1>
+<hr>
+<ul>
+  <li>{{valor.nome}} - {{valor.descricao}}</li>
+  <li>{{valor.id}}</li>
+</ul>
+
+<div>
+  <div>
+    <label>Nome</label>
+    <br>
+    <input [(ngModel)]="valor.nome" />
+  </div>
+
+  <div>
+    <label>Descricao</label>
+    <br>
+    <input [(ngModel)]="valor.descricao">
+  </div>
+
+  <div>
+    <label>ID</label>
+    <br>
+    <input [(ngModel)]="valor.id">
+  </div>

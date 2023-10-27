@@ -7,15 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'first-class';
-  descricao1 = 'Descricao';
-
-  valor: {
-    id: number,
-    nome: string,
-    descricao: string,
-  } = {
-    id: 1,
-    nome: 'Nome',
-    descricao: 'Descrição'
-  };
 }

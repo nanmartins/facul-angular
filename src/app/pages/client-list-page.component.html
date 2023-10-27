@@ -1,7 +1,15 @@
 <p>Essa é a primeira pagina de clientes</p>
 
-<ul>
-  <li>Cliente 1</li>
-  <li>Cliente 2</li>
-  <li>Cliente 3</li>
+<ul *ngFor="let cliente of clientes">
+  <li>{{cliente.nome}}</li>
 </ul>
+
+<div *ngIf="clientePremium">
+  <p>Acesso liberado!</p>
+</div>
+
+<div *ngIf="!clientePremium">
+  Assine o premium para full acesso.
+</div>
+
+<button *ngIf="!clientePremium" (click)="clientePremium = true">Assinar</button>

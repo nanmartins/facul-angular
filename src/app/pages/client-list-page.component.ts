@@ -7,5 +7,15 @@ import { Component } from "@angular/core";
 })
 
 export class ClientListPage {
-
+  clientePremium = false;
+  clientes = [
+    {
+      nome: 'Cliente 1',
+      id: 1
+    },
+    {
+      nome: 'Cliente 2',
+      id: 2
+    }
+  ]
 }
