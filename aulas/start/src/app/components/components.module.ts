@@ -5,6 +5,7 @@ import { RouterModule } from "@angular/router";
 import { FormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 import { ClientListPage } from "../pages/client-list-page.component";
+import { CustomUppercasePipe } from "../pipes/custom-uppercase.pipe";
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { ClientListPage } from "../pages/client-list-page.component";
   declarations: [
     HeaderComponent,
     HomePage,
-    ClientListPage
+    ClientListPage,
+    CustomUppercasePipe
   ],
   exports: [
     HeaderComponent,

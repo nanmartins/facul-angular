@@ -9,7 +9,7 @@ import { Component } from "@angular/core";
 export class ClientListPage {
   clientePremium = false
 
-  nome = ''
+  nome = 'Renan Martins'
 
   clientes = [
     {
@@ -26,4 +26,8 @@ export class ClientListPage {
     let count = this.clientes.length;
     this.clientes.push({ nome: this.nome, id: count + 1 });
   }
+
+  data = new Date()
+
+  moeda = 10.50
 }

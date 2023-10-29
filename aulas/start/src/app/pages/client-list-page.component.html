@@ -10,14 +10,24 @@
 <br>
 <button (click)="adicionar()">Adicionar</button>
 
+<!-- <hr> -->
+
+<div>
+  <div *ngIf="clientePremium" style="margin: 20px;">
+    <p>Acesso liberado!</p>
+  </div>
+
+  <div *ngIf="!clientePremium" style="margin: 20px auto;">
+    Assine o premium para full acesso.
+  </div>
+
+  <button *ngIf="!clientePremium" (click)="clientePremium = true">Assinar</button>
+</div>
+
 <hr>
 
-<div *ngIf="clientePremium">
-  <p>Acesso liberado!</p>
-</div>
+<h2 style="text-align: center;">Exemplo de pipes para formatacao de dados</h2>
 
-<div *ngIf="!clientePremium">
-  Assine o premium para full acesso.
-</div>
-
-<button *ngIf="!clientePremium" (click)="clientePremium = true">Assinar</button>
+<p>Data: {{ data | date: 'long' | uppercase }}</p>
+<p>Currency: {{ moeda | currency: 'GBP' }}</p>
+<p>Uppercase customizado: {{ nome | customUppercase }}</p>
