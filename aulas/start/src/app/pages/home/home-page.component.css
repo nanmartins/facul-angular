@@ -2,3 +2,15 @@
 h1 {
   text-align: center;
 }
+
+.alert {
+  text-align: center;
+  width: 250px;
+  height: 120px;
+  border: 1px solid;
+  font-size: 28px;;
+}
+
+.success {
+  background-color: green;
+}

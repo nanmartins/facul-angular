@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 @Component({
   selector: "home-page",
   templateUrl: "./home-page.component.html",
-  styleUrls: ["./home-page.component.css"]
+  styleUrls: ["./home-page.component.css"],
 })
 
 export class HomePage {
@@ -20,5 +20,10 @@ export class HomePage {
   };
 
   imagem = 'https://angular.io/assets/images/logos/angular/angular.svg';
-  width = 300;
+  width = 350;
+
+  sucesso = true
+  enviarDados() {
+    this.sucesso = !this.sucesso
+  }
 }

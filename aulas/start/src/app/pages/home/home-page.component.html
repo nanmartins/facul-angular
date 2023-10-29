@@ -29,4 +29,10 @@
   <hr>
 
   <h2>Imagem databinding</h2>
-  <img [src]="imagem" [width]="width">
+  <img [src]="imagem" [style]="{width: width + 'px'}">
+  <div class="alert" [class]="{success: sucesso}">
+    Alerta
+
+    <br>
+    <button (click)="enviarDados()">Enviar</button>
+  </div>
