@@ -31,3 +31,9 @@
 <p>Data: {{ data | date: 'long' | uppercase }}</p>
 <p>Currency: {{ moeda | currency: 'GBP' }}</p>
 <p>Uppercase customizado: {{ nome | customUppercase }}</p>
+
+<hr>
+
+<h3>Diga olá atraves do client service</h3>
+<br>
+<button (click)="sayHello()">Diga Olá</button>

@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { ClientService } from "../services/client.service";
 
 @Component({
   selector: 'app-client-list',
@@ -28,6 +29,11 @@ export class ClientListPage {
   }
 
   data = new Date()
-
   moeda = 10.50
+
+  constructor(private clientService: ClientService) {}
+
+  sayHello() {
+    alert(this.clientService.sayHello())
+  }
 }
