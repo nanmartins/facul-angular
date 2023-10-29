@@ -18,4 +18,7 @@ export class HomePage {
     nome: 'Two ways',
     descricao: 'Databind'
   };
+
+  imagem = 'https://angular.io/assets/images/logos/angular/angular.svg';
+  width = 300;
 }
