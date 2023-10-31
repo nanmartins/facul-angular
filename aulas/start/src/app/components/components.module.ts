@@ -4,8 +4,11 @@ import { HomePage } from "../pages/home/home-page.component";
 import { RouterModule } from "@angular/router";
 import { FormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
-import { ClientListPage } from "../pages/client-list-page.component";
+import { ClientListPage } from "../pages/client/client-list-page.component";
 import { CustomUppercasePipe } from "../pipes/custom-uppercase.pipe";
+import { PaiPageComponent } from "../pages/pai/pai-page.component";
+import { Child01PageComponent } from "../pages/child01/child01-page.component";
+import { Child02PageComponent } from "../pages/child02/child02-page.component";
 
 @NgModule({
   imports: [
@@ -17,6 +20,9 @@ import { CustomUppercasePipe } from "../pipes/custom-uppercase.pipe";
     HeaderComponent,
     HomePage,
     ClientListPage,
+    PaiPageComponent,
+    Child01PageComponent,
+    Child02PageComponent,
     CustomUppercasePipe
   ],
   exports: [
