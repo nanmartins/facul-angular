@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from "@angular/core";
-import { Subscription, interval, of, map, tap, filter, range } from "rxjs";
+import { Subscription, interval, of, map, tap, filter, range, BehaviorSubject } from "rxjs";
 
 @Component({
   selector: 'app-rxjs-page',
@@ -8,10 +8,8 @@ import { Subscription, interval, of, map, tap, filter, range } from "rxjs";
 
 export class RXJSPageComponent implements OnInit, OnDestroy {
   items: Array<number> =[]
-
   msg = ''
   subscription!: Subscription
-
   // observable = of('item 1', 'item 2')
   observable = interval(1000)
   observable2 = range(1, 10)
@@ -32,6 +30,11 @@ export class RXJSPageComponent implements OnInit, OnDestroy {
     // this.observable2.subscribe((item) => {
     //   this.items.push(item)
     // })
+
+    // subject
+    this.subject.asObservable().subscribe((item) => {
+      this.ultimoEvento = item
+    })
   }
 
   ngOnDestroy() {
@@ -43,4 +46,14 @@ export class RXJSPageComponent implements OnInit, OnDestroy {
   //   this.subscription.unsubscribe()
   //   this.msg = 'Unsubscribed'
   // }
+
+  // SUBJECT  /////////////////////////////////////
+  subject = new BehaviorSubject('Valor Inicial')
+  ultimoEvento = ''
+  contador = 0
+
+  emitirEvento() {
+    this.subject.next('Proximo evento ' + this.contador)
+    this.contador ++
+  }
 }

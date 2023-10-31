@@ -8,3 +8,9 @@
 <ul *ngFor="let item of items">
   <li>{{item}}</li>
 </ul>
+
+<hr>
+<p>Subject</p>
+<button (click)="emitirEvento()">Emitir evento</button>
+
+<p> Ultimo evento: {{ultimoEvento}}</p>
