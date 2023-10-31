@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  login() {
+    localStorage.setItem('currentUser', 'John Doe');
+  }
 
+  logout() {
+    localStorage.removeItem('currentUser');
+  }
+
+  // logged = window.localStorage.getItem('currentUser') ? true : false;
 }

@@ -6,5 +6,5 @@ import { Component } from "@angular/core";
 })
 
 export class Child01PageComponent {
-
+  arrayItems = ["Item 1", "Item 2", "Item 3"];
 }

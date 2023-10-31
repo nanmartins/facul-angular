@@ -7,8 +7,8 @@ import { CommonModule } from "@angular/common";
 import { ClientListPage } from "../pages/client/client-list-page.component";
 import { CustomUppercasePipe } from "../pipes/custom-uppercase.pipe";
 import { PaiPageComponent } from "../pages/pai/pai-page.component";
-import { Child01PageComponent } from "../pages/child01/child01-page.component";
-import { Child02PageComponent } from "../pages/child02/child02-page.component";
+import { Child01PageComponent } from "./child01/child01-page.component";
+import { Child02PageComponent } from "./child02/child02-page.component";
 
 @NgModule({
   imports: [
