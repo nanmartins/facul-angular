@@ -10,6 +10,7 @@ import { PaiPageComponent } from "../pages/pai/pai-page.component";
 import { Child01PageComponent } from "./child01/child01-page.component";
 import { Child02PageComponent } from "./child02/child02-page.component";
 import { ClienteDetalhePageComponent } from "../pages/client-detalhe/client-detalhe-page.component";
+import { RXJSPageComponent } from "../pages/rxjs/rxjs-page.component";
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { ClienteDetalhePageComponent } from "../pages/client-detalhe/client-deta
     Child01PageComponent,
     Child02PageComponent,
     CustomUppercasePipe,
-    ClienteDetalhePageComponent
+    ClienteDetalhePageComponent,
+    RXJSPageComponent
   ],
   exports: [
     HeaderComponent,

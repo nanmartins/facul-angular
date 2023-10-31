@@ -7,6 +7,7 @@ import { Child01PageComponent } from './components/child01/child01-page.componen
 import { Child02PageComponent } from './components/child02/child02-page.component';
 import { UserGuard } from './guards/user.guard';
 import { ClienteDetalhePageComponent } from './pages/client-detalhe/client-detalhe-page.component';
+import { RXJSPageComponent } from './pages/rxjs/rxjs-page.component';
 
 const routes: Routes = [
   { path: 'clients', component: ClientListPage, canActivate: [UserGuard] },
@@ -20,7 +21,9 @@ const routes: Routes = [
     ]
   },
   // Router dos detalhes de cliente com parametro id
-  { path: 'client/detalhe/:id', component: ClienteDetalhePageComponent }
+  { path: 'client/detalhe/:id', component: ClienteDetalhePageComponent },
+
+  { path: 'rxjs', component: RXJSPageComponent },
 ];
 
 @NgModule({
