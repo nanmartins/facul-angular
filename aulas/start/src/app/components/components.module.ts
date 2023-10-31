@@ -9,6 +9,7 @@ import { CustomUppercasePipe } from "../pipes/custom-uppercase.pipe";
 import { PaiPageComponent } from "../pages/pai/pai-page.component";
 import { Child01PageComponent } from "./child01/child01-page.component";
 import { Child02PageComponent } from "./child02/child02-page.component";
+import { ClienteDetalhePageComponent } from "../pages/client-detalhe/client-detalhe-page.component";
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import { Child02PageComponent } from "./child02/child02-page.component";
     PaiPageComponent,
     Child01PageComponent,
     Child02PageComponent,
-    CustomUppercasePipe
+    CustomUppercasePipe,
+    ClienteDetalhePageComponent
   ],
   exports: [
     HeaderComponent,

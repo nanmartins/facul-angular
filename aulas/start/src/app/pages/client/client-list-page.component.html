@@ -43,4 +43,11 @@
   <br>
   <button (click)="sayHello()">Diga Olá</button>
 
+  <hr>
+
+  <h3>Criando rota de detalhe</h3>
+  <ul *ngFor="let cliente of clientes">
+    <li><a [routerLink]="['/client/detalhe', cliente.id]">{{cliente.nome}}</a>
+  </ul>
+
 </div>
