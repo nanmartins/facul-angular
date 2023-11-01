@@ -1,0 +1,10 @@
+<h2>Lista pessoas</h2>
+
+<button (click)="listar()">Listar</button>
+
+<ul>
+  <li *ngFor="let pessoa of pessoas | async">
+    Nome: {{ pessoa.nome }}, idade: {{ pessoa.idade }}
+    <button (click)="salvar(pessoa)">Salvar</button>
+  </li>
+</ul>
