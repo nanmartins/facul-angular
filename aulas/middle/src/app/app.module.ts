@@ -8,18 +8,20 @@ import { ListaPessoasPageComponent } from './pages/lista-pessoas/lista-pessoas-p
 import { HomePageComponent } from './pages/home/home-page.component';
 import { PessoaService } from './services/pessoa.service';
 import { HttpClientModule } from '@angular/common/http';
+import { UserPageComponent } from './pages/user/user-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ListaPessoasPageComponent,
-    HomePageComponent
+    HomePageComponent,
+    UserPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [PessoaService],
   bootstrap: [AppComponent]

@@ -1,0 +1,42 @@
+<h2>User page</h2>
+
+<button (click)="novoUser()">Novo usuario</button>
+
+<table>
+  <thead>
+    <tr>
+      <td>ID</td>
+      <td>Name</td>
+      <td>Email</td>
+      <td>Gender</td>
+      <td>Status</td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let user of users | async">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.gender }}</td>
+      <td>{{ user.status }}</td>
+      <td  style="display: flex; gap: 10px">
+        <a (click)="editar(user)">Editar</a>
+        <a (click)="deletar(user)" style="color: red">Deletar</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<style>
+  td {
+    padding: 5px 10px
+  }
+
+  a {
+    border: 1px solid;
+    padding: 5px;
+  }
+</style>
